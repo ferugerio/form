@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+  <div data-role="header">
+  <h1>Formulario</h1>
+  </div>
+
+<div data-role="main" class="ui-content">
+<form method="get" action="">
+
+  <div class="ui-field-contain">
+    <label for="name">Nombre:</label>
+    <input type="text" name="text" id="name" value="" placeholder="Nombre">
+    </div>
+    
+    <div class="ui-field-contain">
+    <label>Apellidos:</label>
+    <input type="text" name="search" id="search" value="" placeholder="Apellidos">
+  </div>
+  
+   <div class="ui-field-contain">
+   <legend>Sexo:</legend>
+   <label for="sexo1">Masculino</label>
+   <input type="radio" name="sexo" id="sexo1" value="hombre">
+   <label for="sexo2">Femanino</label>
+   <input type="radio" name="sexo" id="sexo2" value="mujer">
+   </div>
+   
+     <div class="ui-field-contain">
+    <label>Fecha De Nacimiento:</label>
+    <input type="date" name="fecha" placeholder="DD-MM-AA">
+  </div>
+  
+      <div class="ui-field-contain">
+    <label>Telefono:</label>
+    <input type="text" name="tel" id="tel" value="" placeholder="xx-xxx-xx">
+  </div>
+  
+        <div class="ui-field-contain">
+    <label>Cel:</label>
+    <input type="text" name="cel" id="cel" value="" placeholder="(xxx) xxx-xx-xx">
+  </div>
+  
+  <div class="ui-field-contain">
+    <label>Direccion:</label>
+    <input type="text" name="dir" id="dir" value="" placeholder="Direccion">
+  </div>
+  
+    <div class="ui-field-contain">
+    <label>Colonia:</label>
+    <input type="text" name="col" id="col" value="" placeholder="Colonia">
+  </div>
+  
+    <div class="ui-field-contain">
+    <label>Codigo Postal:</label>
+    <input type="text" name="cod" id="cod" value="" placeholder="xxxxx">
+  </div>
+  
+    <div class="ui-field-contain">
+    <label>Estado:</label>
+    <input type="text" name="estd" id="estd" value="" placeholder="Estado">
+  </div>
+  
+    <div class="ui-field-contain">
+    <label>Municipio:</label>
+    <input type="text" name="mun" id="mun" value="" placeholder="Municipio">
+  </div>
+  
+  <div class="ui-field-contain">
+   <label>¿Tiene Hijos?</label>
+   <label for="si">Si</label>
+   <input type="radio" name="hijos" id="si" value="hombre" onClick="cuanto.disabled=false">
+   <label for="no">No</label>
+   <input type="radio" name="hijos" id="no" value="mujer" onClick="cuanto.disabled=true">
+   </div>
+   
+   <div class="ui-field-contain">
+   <label>Cuantos:</label>
+    <input type="text" name="cuanto" id="cuanto" value="" placeholder="0">
+</div>
+  
+<div class="ui-field-contain">
+   <legend>Estado Civil:</legend>
+   <label for="est1">Casado</label>
+  <input type="radio" name="civil" id="est1" value="casado">
+   <label for="est2">Soltero</label>
+  <input type="radio" name="civil" id="est2" value="soltero">
+   <label for="est3">Divorciado</label>
+  <input type="radio" name="civil" id="est3" value="divorciado">
+   <label for="est4">Separado</label>
+  <input type="radio" name="civil" id="est4" value="separado">
+  <label for="est5">viudo</label>
+  <input type="radio" name="civil" id="est5" value="viudo">
+   </div>
+
+<div class="ui-field-contain">
+   <legend>Estudios Terminados:</legend>
+   <label for="mov1">PRIMARIA</label>
+   <input type="checkbox" name="mov1" id="mov1">
+   <label for="mov2">SECUNDARIA</label>
+   <input type="checkbox" name="mov2" id="mov2">
+   <label for="mov3">PREPARATORIA</label>
+   <input type="checkbox" name="mov3" id="mov3">
+   <label for="mov4">UNIVERSIDAD</label>
+   <input type="checkbox" name="mov4" id="mov4">
+   </div>
+   
+     <div class="ui-field-contain">
+  <label>TIENE TRABAJO:</label>
+  <label for="si1">Si</label>
+  <input type="radio" name="1" id="si1" value="si"onClick="numers.disabled=false">
+  <label for="no2">No</label>  
+  <input type="radio" name="1" id="no2" value="no" onClick="numers.disabled=true">
+  </div>
+  
+    <div class="ui-field-contain">
+    <label for="colors">:</label>
+    CUANTO GANA POR SEMANA
+    <select id="numers" name="colors">
+      <option value="1">1000</option>
+      <option value="2">1500</option>
+      <option value="3">2000</option>
+      <option value="4">Mas de 2000</option>
+      </select>
+  </div>
+
+  <div class="ui-field-contain">
+   <legend>Vivienda:</legend>
+   <label for="vivi1">Propia</label>
+  <input type="radio" name="vivi" id="vivi1" value="Propia" onClick="cual.disabled=true">
+   <label for="vivi2">Alquilada</label>
+  <input type="radio" name="vivi" id="vivi2" value="Alquilada" onClick="cual.disabled=true">
+   <label for="vivi3">Familiar</label>
+  <input type="radio" name="vivi" id="vivi3" value="Familiar" onClick="cual.disabled=true">
+   <label for="vivi4">Albergue</label>
+  <input type="radio" name="vivi" id="vivi4" value="Albergue" onClick="cual.disabled=true">
+  <label for="vivi5">Otra</label>
+  <input type="radio" name="vivi" id="vivi5" value="Otra" onClick="cual.disabled=false">
+  </div>
+
+    <div class="ui-field-contain">
+  <label>¿Cual?</label>
+    <input type="text" name="cual" id="cual" value="" placeholder="">
+   </div>
+   
+   <div class="ui-field-contain">
+   <legend>Servicios Públicos:</legend>
+   <label for="ser1">Agua</label>
+   <input type="checkbox" name="ser1" id="ser1">
+   <label for="ser2">Luz</label>
+   <input type="checkbox" name="ser2" id="ser2">
+   <label for="ser3">Teléfono</label>
+   <input type="checkbox" name="ser3" id="ser3">
+   <label for="ser4">Gas</label>
+   <input type="checkbox" name="ser4" id="ser4">
+   <label for="ser5">Internet</label>
+   <input type="checkbox" name="ser5" id="ser5">
+   </div>
+   
+   <input type="reset" value="borrar formulario" name="btnborrar"></input>
+<input type="submit" value="enviar formulario" name="btnenviar"></input>
+</form>
+</body>
+</html>
